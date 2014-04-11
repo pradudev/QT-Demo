@@ -1,0 +1,683 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.honadesign.com/agilisys/myaccount20.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 11 Apr 2014 12:00:20 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=240, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
+<title>myAccount 2.0</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
+<link rel="stylesheet" href="css/myAccount.css" type="text/css" />
+    <link rel="stylesheet" href="css/ad-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/ad-default.css" type="text/css" />
+<link rel="stylesheet" href="css/myAccount.css" type="text/css" />
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/bootstrap.js"></script>
+    <script src="js/jquery.adslider.min.js"></script>
+<script src="js/responsive.js"></script> <!--TODO: Rename-->
+</head>
+<body>
+<header>
+  <div class="container container-fluid">
+    <div class="row-fluid">
+      <div class="span6 pull-left header-logo agm-content"> <img src="images/logo_any.png" alt="Logo"/> </div>
+      <div class="span6">
+        <div class="hide-SmallScreens pull-right text-center agm-content"> <a><img src="images/persona.png" alt="persona" /></a>
+          <div>
+            <div class="text-center"> <a><span class="color-text">log</span><span class="brand-text">Out</span></a> </div>
+          </div>
+        </div>
+        <div class="hide-SmallScreens pull-right agm-content agm-right text-right">
+          <div class="extraLarge-text agm-bottom">Hello Helen Bee!</div>
+          <div class="agm-top"> <a onclick="$('#userDetailBox').fadeIn(450);"><span class="color-text">my</span><span class="brand-text">Details</span></a> | <a><span class="color-text">my</span><span class="brand-text">Documents</span></a> </div>
+        </div>
+        <div id="userDetailBox" class="small-container agp-section display-none"> <a onclick="$('#userDetailBox').fadeOut(450);"><span class="pull-left brand-text">X</span></a>
+          <div class="text-right"><a onclick="$('#userDetailBox').fadeOut(450);"><span class="color-text">my</span><span class="brand-text">Details</span></a></div>
+          <div class="horizontal-divider"></div>
+          <strong>Hellen Bee</strong><br />
+          <div class="agm-top agm-bottom"><a>Update my e-mail address</a></div>
+          <div class="agm-bottom"><a>Change my password</a></div>
+          <div class="agm-bottom"><a>Add/Amend my address</a></div>
+          <div class="agm-bottom"><a>De-activate <span class="color-text">my</span><span class="brand-text">Account</span></a></div>
+        </div>
+        <!--This when Javascript is turned off-->
+        <noscript>
+        <div id="userDetailBox-JS-off" class="small-container agp-section"> <a onclick="$('#userDetailBox').fadeOut(450);"><span class="pull-left brand-text">X</span></a>
+          <div class="text-right"><a onclick="$('#userDetailBox').fadeOut(450);"><span class="color-text">my</span><span class="brand-text">Details</span></a></div>
+          <div class="horizontal-divider"></div>
+          <strong>Hellen Bee</strong><br />
+          <div class="agm-top agm-bottom"><a>Update my e-mail address</a></div>
+          <div class="agm-bottom"><a>Change my password</a></div>
+          <div class="agm-bottom"><a>Add/Amend my address</a></div>
+          <div class="agm-bottom"><a>De-activate <span class="color-text">my</span><span class="brand-text">Account</span></a></div>
+        </div>
+        </noscript>
+        <!--This section have to be merge with the one above - once we start using Boostrap 3 we will change merge the sections--> 
+        <a onclick="$('#userDetailBox').fadeIn(450);"><span class="show-SmallScreens btn-SmallScreens pull-left text-center"> <img src="images/persona.png" alt="persona" /> </span></a> <a><span class="show-SmallScreens btn-SmallScreens pull-left text-center"> <img src="images/document-small.png" alt="documents" /> </span> </a> </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+<div class="ht-divider"></div>
+
+
+
+
+
+
+
+
+
+
+
+<!--Navigation Area-->
+<nav>
+  <div class="color-bk agp-top">
+    <div class="container container-fluid">
+      <div class="navbar"> 
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content --> 
+        <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <span class="extraLarge-text pull-left agm-right breadcrumb">my<a class="brand-text">Account</a></span>
+        <div class="nav-collapse">
+          <ul class="menu-collapse inline agm-left breadcrumb">
+            <li class="breadcrumb"><a>Home</a> / </li>
+            <li class="breadcrumb"><a>Login</a> / </li>
+            <li class="breadcrumb"><a>myAccount</a> / </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--Alert and text info Area-->
+<div class="brand-Bb-Bt">
+  <div class="container container-fluid agp-section">
+    <div class="pull-right agm-left"><a><span class="brand-text">Help</span><span class="color-text">me</span></a></div>
+    <span class="text-info">For security you will be logged out automatically after 15 minutes of inactivity</span> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--My Linked Accounts-->
+
+<div class="container container-fluid nav-container">
+    <h3 class="agp-top agp-bottom pointer" data-toggle="collapse" data-target="#linkedAccounts"><span class="color-text">my</span><span class="brand-text">Linked</span><span class="color-text">Accounts</span>
+    <div class="pull-right hidden-desktop">
+    			<span class="img-up text-helper">
+              		<img src="images/up.png"/>
+               </span>
+    			<span class="img-down text-helper">
+    				<img src="images/down.png"/>
+              </span>
+    </div>
+    </h3>
+    <div id="linkedAccounts" class="panel-collapse in collapse">
+    <!--Linked Account 1: Residential Services always at the top-->
+    <div class="row-fluid grid-background acc-divider">
+    <div class="span8 link-group account-group highlighted-section" onclick="location.href='';">
+        <div class="row-fluid agp-section">
+        <div class="span5">
+            <div class="acc-label">
+            <div class="pull-left">
+                <div class="highlighted-icon agm-right text-center"><img src="images/icon_residential_services.png" alt="residential services"/></div>
+            </div>
+            <h4 class="label-title"><span class="agm-top agm-bottom">Residential Services</span></h4>
+            </div>
+        </div>
+        <div class="span7">
+            <div><span><b>Reference:</b></span><span> 8853544</span></div>
+            <div><span><b>Address:</b></span><span> 8 LucyGardens, Dagenham, Essex, RM8 3ES</span></div>
+        </div>
+        </div>
+    </div>
+    <div class="span4 account-group hidden-phone"> <a><span><span class="brand-text">+</span> Edit Address</span> </a> <a><span class="infoIcon-large pull-right text-center">i</span></a> </div>
+    </div>
+    <!--Linked Account 2: -->
+    <div class="row-fluid grid-background acc-divider">
+    <div class="span8 link-group account-group highlighted-section"  onclick="location.href='';">
+        <div class="row-fluid agp-section">
+        <div class="span5">
+            <div class="acc-label">
+            <div class="pull-left">
+                <div class="highlighted-icon agm-right text-center"><img src="images/icon_council_tax_II.png" alt="Council Tax"/></div>
+            </div>
+            <h4 class="label-title"><span class="agm-top agm-bottom">Council Tax</span></h4>
+            </div>
+        </div>
+        <div class="span7">
+            <div><span><b>Reference:</b></span><span> 8853544</span></div>
+            <div><span><b>Address:</b></span><span> 8 LucyGardens, Dagenham, Essex, RM8 3ES</span></div>
+        </div>
+        </div>
+    </div>
+    <div class="span4 account-group hidden-phone"> <a><span><span class="brand-text">+</span> Manage account</span> </a> <a><span class="infoIcon-large pull-right text-center">i</span></a> <br />
+        <a><span><span class="brand-text">+</span> Make a payment</span> </a> <br />
+        <a><span><span class="brand-text">+</span> Set up a direct debit</span> </a><br />
+    </div>
+    </div>
+    <!--Linked Account 3: -->
+    <div class="row-fluid grid-background acc-divider">
+    <div class="span8 link-group account-group highlighted-section" onclick="location.href='';">
+        <div class="row-fluid agp-section">
+        <div class="span5">
+            <div class="acc-label">
+            <div class="pull-left">
+                <div class="highlighted-icon agm-right text-center"><img src="images/Icon_housing_rents.png" alt="Housing Rents"/></div>
+            </div>
+            <h4 class="label-title"><span class="agm-top agm-bottom">Housing Rents</span></h4>
+            </div>
+        </div>
+        <div class="span7">
+            <div><span><b>Reference:</b></span><span> 8853544</span></div>
+            <div><span><b>Address:</b></span><span> 8 LucyGardens, Dagenham, Essex, RM8 3ES</span></div>
+        </div>
+        </div>
+    </div>
+    <div class="span4 account-group hidden-phone"> <a><span><span class="brand-text">+</span> View</span> </a> <a><span class="infoIcon-large pull-right text-center">i</span></a> </div>
+    </div>
+    <!--Linked Account 4: -->
+    <div class="row-fluid grid-background acc-divider">
+    <div class="span8 link-group account-group highlighted-section"  onclick="location.href='';">
+        <div class="row-fluid agp-section">
+        <div class="span5">
+            <div class="acc-label">
+            <div class="pull-left">
+                <div class="highlighted-icon agm-right text-center"><img src="images/Icon_parking_permit.png" alt="Parking Permit"/></div>
+            </div>
+            <h4 class="label-title"><span class="agm-top agm-bottom">Parking Permit</span></h4>
+            </div>
+        </div>
+        <div class="span7">
+            <div><span><b>Reference:</b></span><span> 8853544</span></div>
+            <div><span><b>Address:</b></span><span> 8 LucyGardens, Dagenham, Essex, RM8 3ES</span></div>
+        </div>
+        </div>
+    </div>
+    <div class="span4 account-group hidden-phone"> <a><span><span class="brand-text">+</span> Renew</span> </a> <a><span class="infoIcon-large pull-right text-center">i</span></a> </div>
+    </div>
+    <div class="row-fluid grid-background highlighted-section acc-divider">
+    <div class="span7">
+        <div class="row-fluid">
+        <div class="span12">
+            <select class="acc-dropdown agm-left agm-right">
+            <option value="" disabled selected><span class="label-title">select an account</span></option>
+            <option value="1"><a>Council tax</a></option>
+            <option value="2"><a>Housing and Council tax benefit</a></option>
+            <option value="3"><a>Housing rents</a></option>
+            <option value="4"><a>housing register</a></option>
+            <option value="5"><a>Parking permits: Residents, bussines and visitors</a></option>
+            <option value="6"><a>Parking permits: SMART visitor</a></option>
+            </select>
+        </div>
+        </div>
+    </div>
+    <div class="span4">
+        <h4 class="text-right"><span class="agm-left"><img src="images/icon_chain.png"/></span> <span class="agm-left agp-right agm-right"><a class="label-title">Link an existing account</a></span></h4>
+    </div>
+    <div class="span1"> <a><span class="hide-SmallScreens label-title large-text agm-right pull-right">+</span></a> </div>
+    </div>
+    </div>
+</div>
+
+
+    
+
+
+
+<!--My Navigation--> 
+
+<nav>
+<div class="secondary-color-bk agp-bottom agm-top">
+      <div class="container container-fluid nav-container">  
+        <h3 id="navigationHeader" class="agp-top agp-bottom pointer" data-toggle="collapse" data-target="#myNavigation">
+          <span class="color-text">my</span><span class="brand-text">Services</span>
+    <div class="pull-right hidden-desktop">
+    			<span class="img-up text-helper">
+              		<img src="images/up.png"/>
+               </span>
+    			<span class="img-down text-helper">
+    				<img src="images/down.png"/>
+              </span>
+    </div>
+        </h3>
+        
+			                   <div class="scroll-left pull-left pointer hidden-phone">
+                        <img src="images/left.png">
+                   </div>
+                   <div class="scroll-right pull-right pointer hidden-phone">
+                        <img src="images/right.png">
+                   </div>
+              <div id="myNavigation" class="container-inner panel-collapse in collapse">
+                  	<div class="carousel">
+                    <div class="wrapper-services inline royalSlider">
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Parking</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center"><a>New Parking Permit</a><br/>
+                        <a>Edit details</a>
+                        </div>
+                      </div> 
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Antisocial Behaviour</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center">  
+                            <a>Report it</a> <br />
+                            <a>my reports</a>
+                        </div>
+                      </div> 
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Public Protection</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center">  
+                            <a>Inform</a> <br />
+                            <a>Permits</a>
+                        </div>
+                      </div> 
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Housing Benefits</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center"><a>New claim</a><br/>
+                        <a>Edit details</a>
+                        </div>
+                      </div> 
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Bins</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center">  
+                            <a>New</a> <br />
+                            <a>Missed</a>
+                        </div>
+                      </div>
+                       <!--Duplicates-->  
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Parking</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center"><a>New Parking Permit</a><br/>
+                        <a>Edit details</a>
+                        </div>
+                      </div> 
+                      <div class="menu-item">       
+                       <!--Circle & Icon-->
+                       <div class="services-icon-wrapper">            
+                       <!--Information circle-->
+                         <div class="infoIcon-small text-center pull-left">i</div>
+                            <div class="services-icon agm-left text-center">
+                              <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                                <img src="images/icon-service-parking.png" alt="icon" />
+                              </div>
+                            </div>
+                        </div>
+                        <div class="clearfix agp-left-right">
+                            <!--Title-->
+                            <div class="text-center">
+                              <div><a class="brand-text">Parking</a></div>
+                            </div>
+                        </div>
+                        <!--Links-->
+                        <div class="text-center"><a>New Parking Permit</a><br/>
+                        <a>Edit details</a>
+                        </div>
+                      </div> 
+                 </div> 
+    
+                </div>
+                <div class="text-center secondary-color-bk hidden-desktop">
+            		<div class="text-helper">
+                        <img src="images/phone-left.png"/> 
+                        <span class="agm-left agm-right"><strong>SWIPE</strong></span>
+                      <img src="images/phone-right.png"/>
+                  </div>
+                </div>
+              </div>                              
+      </div>
+    </div>
+
+<div id="servicesList" class="container container-fluid nav-container brand-Border panel-collapse collapse">
+    <div class="container container-fluid nav-container">  
+    <h3 class="agp-top agp-bottom" data-toggle="collapse" data-target="#servicesList">
+        <span class="color-text">second</span><span class="brand-text">List</span>
+        <a><span class="pull-right agm-left-right"><strong>X</strong></span></a>
+    </h3>
+        <div id="subNavigation" class="container-inner panel-collapse in collapse">
+            <div class="carousel">
+            <div class="wrapper-services inline royalSlider">
+                <div class="menu-item">       
+                <!--Circle & Icon-->
+                <div class="services-icon-wrapper">            
+                <!--Information circle-->
+                    <div class="infoIcon-small text-center pull-left">i</div>
+                    <div class="services-icon agm-left text-center">
+                        <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                        <img src="images/icon-service-parking.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix agp-left-right">
+                    <!--Title-->
+                    <div class="text-center">
+                        <div><a class="brand-text">Parking</a></div>
+                    </div>
+                </div>
+                <!--Links-->
+                <div class="text-center"><a>New Parking Permit</a><br/>
+                <a>Edit details</a>
+                </div>
+                </div> 
+                <div class="menu-item">       
+                <!--Circle & Icon-->
+                <div class="services-icon-wrapper">            
+                <!--Information circle-->
+                    <div class="infoIcon-small text-center pull-left">i</div>
+                    <div class="services-icon agm-left text-center">
+                        <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                        <img src="images/icon-service-parking.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix agp-left-right">
+                    <!--Title-->
+                    <div class="text-center">
+                        <div><a class="brand-text">Antisocial Behaviour</a></div>
+                    </div>
+                </div>
+                <!--Links-->
+                <div class="text-center">  
+                    <a>Report it</a> <br />
+                    <a>my reports</a>
+                </div>
+                </div> 
+                <div class="menu-item">       
+                <!--Circle & Icon-->
+                <div class="services-icon-wrapper">            
+                <!--Information circle-->
+                    <div class="infoIcon-small text-center pull-left">i</div>
+                    <div class="services-icon agm-left text-center">
+                        <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                        <img src="images/icon-service-parking.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix agp-left-right">
+                    <!--Title-->
+                    <div class="text-center">
+                        <div><a class="brand-text">Public Protection</a></div>
+                    </div>
+                </div>
+                <!--Links-->
+                <div class="text-center">  
+                    <a>Inform</a> <br />
+                    <a>Permits</a>
+                </div>
+                </div> 
+                <div class="menu-item">       
+                <!--Circle & Icon-->
+                <div class="services-icon-wrapper">            
+                <!--Information circle-->
+                    <div class="infoIcon-small text-center pull-left">i</div>
+                    <div class="services-icon agm-left text-center">
+                        <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                        <img src="images/icon-service-parking.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix agp-left-right">
+                    <!--Title-->
+                    <div class="text-center">
+                        <div><a class="brand-text">Housing Benefits</a></div>
+                    </div>
+                </div>
+                <!--Links-->
+                <div class="text-center"><a>New claim</a><br/>
+                <a>Edit details</a>
+                </div>
+                </div> 
+                <div class="menu-item">       
+                <!--Circle & Icon-->
+                <div class="services-icon-wrapper">            
+                <!--Information circle-->
+                    <div class="infoIcon-small text-center pull-left">i</div>
+                    <div class="services-icon agm-left text-center">
+                        <div class="agm-content" data-toggle="collapse" data-target="#servicesList">
+                        <img src="images/icon-service-parking.png" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix agp-left-right">
+                    <!--Title-->
+                    <div class="text-center">
+                        <div><a class="brand-text">Bins</a></div>
+                    </div>
+                </div>
+                <!--Links-->
+                <div class="text-center">  
+                    <a>New</a> <br />
+                    <a>Missed</a>
+                </div>
+                </div>
+                
+            </div> 
+
+        </div>
+        </div>
+    <div class="text-center hidden-desktop">
+            	<div class="text-helper">
+                    <img src="images/phone-left.png"/> 
+                    <span class="agm-left agm-right"><strong>SWIPE</strong></span>
+                    <img src="images/phone-right.png"/>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--My History Tables-->
+
+<div class="container container-fluid nav-container">
+  <h3 class="agp-top agp-bottom pointer" data-toggle="collapse" data-target="#myHistory"><span class="color-text">my</span><span class="brand-text">History</span>
+    <div class="pull-right hidden-desktop">
+    			<span class="img-up text-helper">
+              		<img src="images/up.png"/>
+               </span>
+    			<span class="img-down text-helper">
+    				<img src="images/down.png"/>
+              </span>
+    </div>
+  </h3>
+    <div id="myHistory" class="panel-collapse in collapse">
+  <table class="responsive-tbl Historytbl">
+    <thead>
+      <tr class="color-bk">
+        <td colspan="3" class="source-alignment  hidden-phone">Source</td>
+        <td>Action</td>
+        <td class="hidden-phone">Reference </td>
+        <td>Date </td>
+        <td>Status </td>
+        <td class="hidden-phone">Done by </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="source-alignment hidden-phone"><img src="images/icon-channel-mobile.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-transaction.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-service-council-tax.png" /></td>
+        <td>Single person discount </td>
+        <td class="hidden-phone">RM8 3ES </td>
+        <td>28/06/2013 19:19 </td>
+        <td>SUCCESSFUL </td>
+        <td class="hidden-phone">Self serve </td>
+      </tr>
+      <tr>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-tablet.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-service-request.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-highways.png" /></td>
+        <td>Pothole-Road </td>
+        <td class="hidden-phone">RM8 3ES </td>
+        <td>28/06/2013 20:19 </td>
+        <td>Inspection </td>
+        <td class="hidden-phone">Self serve </td>
+      </tr>
+      <tr>
+        <td class="source-alignment hidden-phone"><img src="images/icon-channel-phone.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-application.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-service-parking.png" /></td>
+        <td>New residents permits </td>
+        <td class="hidden-phone">RM8 3ES </td>
+        <td>13/06/2013 11:54 </td>
+        <td>- </td>
+        <td class="hidden-phone">GR Evans </td>
+      </tr>
+      <tr>
+        <td class="source-alignment hidden-phone"><img src="images/icon-channel-web.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-booking.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-collections.png" /></td>
+        <td>Special Collections </td>
+        <td class="hidden-phone">RM8 3ES </td>
+        <td>28/06/2013 09:31 </td>
+        <td>Confirmed </td>
+        <td class="hidden-phone">Self serve </td>
+      </tr>
+      <tr>
+        <td class="source-alignment hidden-phone"><img src="images/icon-channel-mobile.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-type-payment.png" /></td>
+        <td class="source-alignment hidden-phone"><img src="images/icon-service-council-tax.png" /></td>
+        <td>CTAX account payment </td>
+        <td class="hidden-phone">RM8 3ES </td>
+        <td>10/06/2013 10:19 </td>
+        <td>SUCCESSFUL </td>
+        <td class="hidden-phone">Self serve </td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="pull-right"><a><span class="brand-text">View more history</span></a></span>
+    </div>
+</div>
+
+<footer>
+  <div class="color-bk agp-section" id="footer">
+    <div class="container container-fluid">
+      <div class="text-right"><img src="images/logo_ad.png" alt="Agilisys Digital"/></div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<!-- Mirrored from www.honadesign.com/agilisys/myaccount20.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 11 Apr 2014 12:00:48 GMT -->
+</html>

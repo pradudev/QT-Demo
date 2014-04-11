@@ -1,0 +1,676 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+/*Orange*/
+/* line 15, myAccount.less */
+html {
+  font-size: 16px;
+  width: 100%;
+}
+/* line 20, myAccount.less */
+body,
+#footer {
+  display: block;
+}
+/* line 23, myAccount.less */
+a {
+  cursor: pointer;
+}
+/* line 25, myAccount.less */
+a img {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 35, myAccount.less */
+a img:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+/* line 40, myAccount.less */
+a:hover {
+  color: #330000 - #ffffff;
+}
+/* line 43, myAccount.less */
+a:active {
+  color: #ffcc00;
+}
+/* line 46, myAccount.less */
+input.globalInputClass {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  height: 30px;
+  padding: 0px 0px 0px 11px;
+}
+/* line 54, myAccount.less */
+input.globalInputClass:focus {
+  border-color: #fc8505;
+  -webkit-box-shadow: 2px 2px 2px #999999;
+  -moz-box-shadow: 2px 2px 2px #999999;
+  box-shadow: 2px 2px 2px #999999;
+}
+/* line 61, myAccount.less */
+footer {
+  margin-bottom: 0px;
+}
+/* line 64, myAccount.less */
+#footer {
+  margin-top: 120px;
+  bottom: 0;
+  height: 100px;
+}
+/*Classes*/
+/* line 72, myAccount.less */
+.brand-text {
+  color: #f9a025;
+}
+/* line 75, myAccount.less */
+.brand-text:hover {
+  color: #ffcc00;
+}
+/* line 78, myAccount.less */
+.brand-text:active {
+  color: #ffcc00 - #f9a025;
+}
+/* line 81, myAccount.less */
+.color-text {
+  color: #330000;
+}
+/* line 84, myAccount.less */
+.label-title {
+  color: #999999;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+/* line 89, myAccount.less */
+.secondary-color-bk {
+  background-color: #fef7ec;
+}
+/* line 92, myAccount.less */
+.text-helper {
+  color: #f9a025;
+  font-size: 20px;
+  opacity: 0.5;
+}
+/* line 98, myAccount.less */
+.color-bk {
+  color: #ffffff;
+  background-color: #330000 !important;
+  transition: all 0.5s ease;
+}
+/* line 102, myAccount.less */
+.color-bk ul,
+.color-bk li,
+.color-bk a:hover {
+  color: #ffffff;
+}
+/* line 105, myAccount.less */
+.color-bk a {
+  color: #f9a025;
+  text-shadow: none;
+}
+/* line 109, myAccount.less */
+.color-bk a:active {
+  color: #ffcc00;
+}
+/* line 113, myAccount.less */
+.grid-background {
+  background-color: #f7f7f7;
+}
+/* line 117, myAccount.less */
+.brand-Border {
+  border: 1px solid #f9a025;
+}
+/* line 118, myAccount.less */
+.brand-Bb-Bt {
+  border-top: 1px solid #f9a025;
+  border-bottom: 1px solid #f9a025;
+}
+/* line 119, myAccount.less */
+.highlighted-section {
+  transition: all 0.5s ease;
+}
+/* line 122, myAccount.less */
+.highlighted-section:hover {
+  cursor: pointer;
+  background-color: #f9a025;
+}
+/* line 125, myAccount.less */
+.highlighted-section:hover .label-title {
+  color: #f7f7f7;
+}
+/* line 129, myAccount.less */
+.highlighted-section:active {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+/* line 132, myAccount.less */
+.highlighted-section:active .label-title {
+  color: #000;
+}
+/* line 136, myAccount.less */
+.acc-divider {
+  border-top: 3px solid #ffffff;
+}
+/* line 139, myAccount.less */
+.pointer {
+  cursor: pointer;
+}
+/* line 145, myAccount.less */
+.agm-top {
+  margin-top: 20px;
+}
+/* line 146, myAccount.less */
+.agm-bottom {
+  margin-bottom: 20px;
+}
+/* line 147, myAccount.less */
+.agm-left {
+  margin-left: 20px;
+}
+/* line 148, myAccount.less */
+.agm-right {
+  margin-right: 20px;
+}
+/* line 149, myAccount.less */
+.agm-left-right {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 150, myAccount.less */
+.agm-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 151, myAccount.less */
+.agm-div {
+  margin: auto;
+}
+/* line 153, myAccount.less */
+.agp-top {
+  padding-top: 10px;
+}
+/* line 154, myAccount.less */
+.agp-bottom {
+  padding-bottom: 10px;
+}
+/* line 155, myAccount.less */
+.agp-left {
+  padding-left: 10px;
+}
+/* line 156, myAccount.less */
+.agp-right {
+  padding-right: 10px;
+}
+/* line 157, myAccount.less */
+.agp-section {
+  padding: 10px;
+}
+/* line 158, myAccount.less */
+.agp-left-right {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 163, myAccount.less */
+.header-btn {
+  float: right;
+  margin-left: 20px;
+}
+/* line 164, myAccount.less */
+.header-logo {
+  width: auto;
+}
+/* line 167, myAccount.less */
+.show-SmallScreens {
+  display: none;
+}
+/* line 168, myAccount.less */
+.clear-none {
+  clear: none;
+}
+/* line 169, myAccount.less */
+.display-none {
+  display: none;
+}
+/* line 170, myAccount.less */
+.responsive-width,
+.responsive img {
+  width: 100%;
+}
+/* line 171, myAccount.less */
+.header-menu {
+  font-size: 20px;
+  line-height: 20px;
+}
+/* line 172, myAccount.less */
+.breadcrumb {
+  background-color: transparent;
+  margin: 0px;
+  padding: 5px 10px;
+}
+/* line 177, myAccount.less */
+.account-group {
+  min-height: 80px !important;
+  padding: 10px;
+}
+/* line 181, myAccount.less */
+.small-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #330000;
+  background-color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 160px;
+}
+/* line 191, myAccount.less */
+#userDetailBox-JS-off {
+  right: 300px;
+}
+/* line 194, myAccount.less */
+.acc-dropdown {
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 197, myAccount.less */
+.acc-dropdown option:hover {
+  border: 1px solid orange;
+}
+/* line 202, myAccount.less */
+.btnAction {
+  width: 100%;
+  min-width: 60px;
+  max-width: 400px;
+}
+/* line 210, myAccount.less */
+.navbar {
+  margin-bottom: 0px;
+}
+/* line 214, myAccount.less */
+.highlighted-icon {
+  border-radius: 17px;
+  background-color: #f9a025;
+  padding: 10px;
+}
+/* line 218, myAccount.less */
+.highlighted-icon img {
+  vertical-align: middle;
+}
+/* line 222, myAccount.less */
+.scroll-right,
+.scroll-left {
+  padding: 50px 15px;
+}
+/* line 225, myAccount.less */
+.infoIcon-large,
+.infoIcon-small {
+  border-radius: 100px;
+  color: #ffffff;
+  width: 20px;
+  background-color: #08c;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+/* line 233, myAccount.less */
+.infoIcon-large:hover,
+.infoIcon-small:hover {
+  box-shadow: 1px 1px 4px #CCC inset;
+}
+/* line 236, myAccount.less */
+.infoIcon-large:active,
+.infoIcon-small:active {
+  box-shadow: 1px 1px 4px #009 inset;
+}
+/* line 239, myAccount.less */
+.infoIcon-large {
+  padding: 5px;
+}
+/* line 242, myAccount.less */
+.infoIcon-small {
+  padding: 2px 0px;
+  height: 15px;
+  margin-left: 28px;
+}
+/* line 247, myAccount.less */
+.acc-label {
+  height: 50px;
+}
+/* line 250, myAccount.less */
+.link-group {
+  border-right: 3px solid #ffffff;
+  background: url(../images/arrowLA_white.png) right no-repeat;
+}
+/* line 256, myAccount.less */
+.horizontal-divider {
+  height: 2px;
+  border-bottom: 1px solid #f9a025;
+  margin: 20px 0px;
+}
+/* line 261, myAccount.less */
+.ht-divider {
+  height: 4px;
+  border-bottom: 4px solid #f9a025;
+  margin: 0px 0px 5px 0px;
+}
+/* line 269, myAccount.less */
+.login-area {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 40px;
+  box-shadow: 3px 3px 3px #CCCCCC;
+}
+/* line 278, myAccount.less */
+.login-area input[type=text] {
+  width: 96%;
+}
+/* line 281, myAccount.less */
+input[type=checkbox].css-checkbox {
+  display: none;
+}
+/* line 284, myAccount.less */
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left: 23px;
+  height: 18px;
+  display: inline-block;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 294, myAccount.less */
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -18px;
+}
+/* line 297, myAccount.less */
+label.css-label {
+  background-image: url(../../../../www.csscheckbox.com/checkboxes/u/csscheckbox_ff5b70ac9e9b4633a992f9a3313ff4d8.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 307, myAccount.less */
+.wrapper-services {
+  position: relative;
+}
+/* line 310, myAccount.less */
+.nav-container {
+  padding: 0px 30px 0px 30px;
+}
+/* line 313, myAccount.less */
+nav {
+  /*this configuration for button*/
+}
+/* line 314, myAccount.less */
+nav .services-icon-wrapper {
+  height: 80px;
+  width: 80px;
+}
+/* line 319, myAccount.less */
+nav .services-icon {
+  height: 62px;
+  width: 62px;
+  background-color: #fff;
+  border: 1px #f9a025 solid;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0px 0px 5px 45px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease-in-out;
+}
+/* line 330, myAccount.less */
+nav .services-icon:hover {
+  box-shadow: -2px -2px 10px #b4b4b4 inset;
+}
+/* line 335, myAccount.less */
+nav .services-icon:active {
+  box-shadow: 2px 2px 2px #B4B4B4 inset;
+}
+/* line 340, myAccount.less */
+nav .button-flat {
+  background-color: #a5a5a5;
+  padding: 8px 2px 8px 2px;
+  border: 1px;
+}
+/* line 345, myAccount.less */
+nav .button-flat:hover {
+  background-color: #1a1a1a;
+}
+/* line 348, myAccount.less */
+nav .menu-item {
+  width: 150px;
+  height: 120px;
+  margin-right: 55px;
+}
+/*this is settings for text on grey background*/
+/* line 355, myAccount.less */
+.text-on-grey {
+  background-color: #a5a5a5;
+  color: #ffffff;
+  padding: 8px 12px;
+}
+/* line 363, myAccount.less */
+.responsive-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #f1f1f1;
+  /* Zebra striping */
+}
+/* line 367, myAccount.less */
+.responsive-tbl tr td {
+  padding: 10px;
+}
+/* line 370, myAccount.less */
+.responsive-tbl tr:hover {
+  border-top: 1px solid #CECECE;
+  border-left: 1px solid #CECECE;
+  -webkit-box-shadow: 2px 2px 2px #999999;
+  -moz-box-shadow: 2px 2px 2px #999999;
+  -o-box-shadow: 2px 2px 2px #999999;
+  box-shadow: 2px 2px 2px #999999;
+}
+/* line 380, myAccount.less */
+.responsive-tbl tr:nth-of-type(odd) {
+  background: #F0F0F0;
+}
+/* line 384, myAccount.less */
+.source-alignment {
+  text-align: center;
+}
+/* line 389, myAccount.less */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+/* line 392, myAccount.less */
+.extraLarge-text {
+  font-size: 30px;
+  line-height: 20px;
+}
+/* line 393, myAccount.less */
+.large-text {
+  font-size: 20px;
+  line-height: 20px;
+}
+/* line 394, myAccount.less */
+.small-text {
+  font-size: 14px;
+}
+/* line 395, myAccount.less */
+.text-info {
+  color: #999999;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 404, myAccount.less */
+.text-info:hover {
+  color: #bb0000;
+}
+@media (max-width: 979px) {
+  /* line 409, myAccount.less */
+  .navbar {
+    margin-bottom: 5px;
+  }
+  /* line 412, myAccount.less */
+  .acc-dropdown {
+    width: 90%;
+    margin-top: 10px;
+  }
+  /* line 416, myAccount.less */
+  .menu-item {
+    height: 150px;
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 424, myAccount.less */
+  .header-btn {
+    float: right;
+    margin-left: 0px;
+  }
+  /* line 425, myAccount.less */
+  .header-logo {
+    text-align: center;
+    clear: both;
+    width: auto;
+  }
+  /* line 428, myAccount.less */
+  .header-logo img {
+    width: 20%;
+  }
+  /* line 432, myAccount.less */
+  .header-menu {
+    max-width: 700px;
+    width: 100%;
+  }
+  /* line 433, myAccount.less */
+  .show-SmallScreens {
+    display: inline;
+  }
+  /* line 434, myAccount.less */
+  .hide-SmallScreens {
+    display: none;
+  }
+  /* line 435, myAccount.less */
+  .greeting {
+    clear: both;
+    width: 100%;
+  }
+  /* line 436, myAccount.less */
+  .header-menu {
+    font-size: 14px;
+  }
+  /* line 437, myAccount.less */
+  .header-menu img {
+    width: 40%;
+  }
+  /* line 438, myAccount.less */
+  .small-container {
+    right: 60px;
+  }
+  /* line 441, myAccount.less */
+  .btn-SmallScreens {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid lightgray;
+  }
+  /* line 454, myAccount.less */
+  .btn-SmallScreens img {
+    height: 27px;
+  }
+  /* line 458, myAccount.less */
+  .btn-SmallScreens:hover {
+    background-color: #ffffff;
+  }
+  /* line 461, myAccount.less */
+  .btn-SmallScreens:active {
+    background-color: #CCCCCC;
+  }
+  /* line 464, myAccount.less */
+  .link-group {
+    border-right: 0px;
+  }
+  /* line 467, myAccount.less */
+  .navbar {
+    margin-bottom: 10px;
+  }
+  /* line 470, myAccount.less */
+  .acc-dropdown {
+    width: 80%;
+    margin-top: 10px;
+  }
+  /******This configuration is only for the history table******/
+  /* Force table to not be like tables anymore 
+	.responsive-tbl, table, thead, tbody, th, td, tr { display: block; }*/
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /* line 480, myAccount.less */
+  .responsive-tbl tr {
+    border: 1px solid #ccc;
+  }
+  /* line 481, myAccount.less */
+  .responsive-tbl td {
+    padding: 5px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 487, myAccount.less */
+  .small-container {
+    right: 12px;
+    width: 80%;
+  }
+  /* line 491, myAccount.less */
+  .login-area {
+    max-width: 200px;
+    padding: 20px;
+  }
+  /* line 495, myAccount.less */
+  .text-info {
+    max-width: 175px;
+  }
+  /* line 498, myAccount.less */
+  .menu-item {
+    margin-right: 5px;
+  }
+}
+
+@media(max-width:300px){
+	h3 {
+		font-size: 15.5px !important;
+		}
+}
+
+.img-down 
+{
+    display: none;
+}
+
+h3.collapsed .img-up {
+    display: none;
+}
+
+h3.collapsed .img-down {
+    display: block;
+}
+
